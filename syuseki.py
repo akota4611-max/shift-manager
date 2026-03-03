@@ -19,7 +19,7 @@ creds = Credentials.from_service_account_info(
 client = gspread.authorize(creds)
 
 # 🔽 あなたのスプレッドシートURL
-target_url = "ここにあなたのスプレッドシートURL"
+target_url = "https://docs.google.com/spreadsheets/d/1DG1aCJxiw6AEW7O383KKntimnxg_oV4uyecwPtGvx5E/edit?usp=sharing"
 
 spreadsheet = client.open_by_url(target_url)
 sheet = spreadsheet.sheet1
@@ -98,6 +98,7 @@ else:
 
     else:
         st.warning("パスワードを入力してください。")
+
 
 
 
